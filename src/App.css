@@ -1,10 +1,11 @@
+#main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( to top right, rgb(65, 3, 65) , rgb(91, 87, 90));
+}
 
-
-
-#name{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.row{
+    background-image: linear-gradient(to bottom right , rgb(126, 121, 121) , rgb(123, 79, 123) , rgb(86, 59, 104));
 }
 
 

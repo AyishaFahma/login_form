@@ -6,107 +6,102 @@ function App() {
    return (
       <>
 
-        
-            <div id='container' className='container mt-5' >
-   
-               <div className='row mt-5 py-5 px-2 border border-secondary rounded-5 gx-5' style={{backgroundColor:'rgb(91, 77, 91)'}}>
-   
-                  <div className="col-md-6 w-full bg-transparent" >
-   
-                     
-   
-                     {/* caurosel */}
-   
-                     <div id="carouselExample" className="carousel slide rounded-4 bg-transparent" >
-                        <div className="carousel-inner">
-                           <div className="carousel-item active w-full">
-                              <img src="https://i.pinimg.com/736x/2d/95/e5/2d95e5886fc4c65a6778b5fee94a7d59.jpg" alt="" className='rounded' style={{ width: '100%', height: '500px' }} />
-                           </div>
-                           <div className="carousel-item w-full">
-                              <img src="https://images.unsplash.com/photo-1593696954577-ab3d39317b97?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZyZWUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" alt="" className='rounded' style={{ width: '100%', height: '500px' }} />
-                           </div>
-                           <div className="carousel-item w-full">
-                              <img src="https://images.unsplash.com/photo-1593696954577-ab3d39317b97?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZyZWUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" alt="" className='rounded ' style={{ width: '100%', height: '500px' }} />
-                           </div>
-                        </div>
-                        <button className="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                           <span className="carousel-control-prev-icon bg-transparent" aria-hidden="true"></span>
-                           <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                           <span className="carousel-control-next-icon bg-transparent" aria-hidden="true"></span>
-                           <span className="visually-hidden">Next</span>
-                        </button>
-                     </div>
-   
-   
-   
-                  </div>
-   
-   
-                {/* form */}
-   
-                  <div className="col-md-6 " >
-   
-                     <div className='p-4 rounded ' >
-                        <h1 className='text-light text-center'>Create An Account</h1>
-   
-                        <p className='mb-4' style={{color:'white'}}>Already Have an Account !!<a href="" style={{ paddingLeft: '5px', fontSize: '18px', color: ' rgba(171, 65, 200, 1)' }}>Login</a></p>
-   
-                        <form action="" >
-   
-                           <div id='name'>
-                              <input type="text" placeholder='FName' className='form-control border-0 p-2' style={{backgroundColor:' rgba(148, 124, 148, 1)'}}/>
-                              <input type="text" placeholder='LName' className='form-control border-0 p-2' style={{backgroundColor:' rgba(148, 124, 148, 1)'}}/>
-                           </div>
-   
-                           <input type="text" placeholder='Email' className='form-control border-0 p-2' style={{ marginTop: '15px' , backgroundColor:' rgba(148, 124, 148, 1)' }}  />
-                           <input type="password" placeholder='Enter your password' className='form-control border-0 p-2' style={{ marginTop: '15px', marginBottom: '20px' , backgroundColor:' rgba(148, 124, 148, 1)'}} />
-   
-                           <div className='d-flex justify-content-start align-items-start'>
-                              <input type="checkbox" />
-                              <p style={{ marginTop: '-8px', paddingLeft: '5px' , color:'white'}}>I agree to the <span style={{ color: ' rgba(171, 65, 200, 1)' , textDecoration:'underline' }}>Term and Condition</span></p>
-                           </div>
-   
-                           <button className='btn  rounded p-2' style={{ width: '100%' , backgroundColor:' rgba(92, 52, 157, 1)' , color:'white' }}>Create an Account</button>
-   
-                           
-   
-                           <div className='d-flex justify-content-center align-items-center m-4'>
-                              <div style={{width:'200px' , height:'1px' , backgroundColor:'gray'}}></div>
-                              <p className='text-center text-secondary'>Or Register with</p>
-                              <div style={{width:'200px' , height:'1px' , backgroundColor:'gray'}}></div>
-                           </div>
+         <div id='main' className='d-flex justify-content-center align-items-center'>
 
-                           {/* google apple login */}
-   
-                           <div className='d-flex justify-content-between ' >
-   
-                              <div className='d-flex justify-content-between ' style={{ width: '100%' }}>
-   
-                                 <button className='btn btn-transparent rounded border border-secondary px-5 '><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="" height={'40px'} width={'40px'} />Google</button>
-   
-                                 <button className='btn btn-transparent rounded border border-secondary px-5'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1724px-Apple_logo_grey.svg.png" alt="" height={'40px'} width={'40px'} />Apple</button>
-   
-   
+            <div className="container-fluid ">
+
+               <div className='row border border-secondary rounded-4 py-4 mx-md-5 mx-1' >
+
+                  <div className="col-md-1"></div>
+
+                  {/* image */}
+
+                  <div className="col-md-5">
+
+                     <div className=''>
+                        <div id="carouselExampleIndicators" className="carousel slide ">
+                           <div className="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                           </div>
+                           <div className="carousel-inner rounded-5 shadow-lg">
+                              <div className="carousel-item active">
+                                 <img src="https://i.pinimg.com/736x/47/2f/4a/472f4a2bcb69324cf43b71252f374501.jpg" className="d-block w-100" alt="..." style={{height:'500px'}} />
                               </div>
-   
+                              <div className="carousel-item">
+                                 <img src="https://i.pinimg.com/736x/14/4d/75/144d756d814f189bb5147c37b1d80e4c.jpg" className="d-block w-100" alt="..." style={{height:'500px'}}/>
+                              </div>
+                              <div className="carousel-item">
+                                 <img src="https://i.pinimg.com/1200x/ea/04/c3/ea04c3a9981c363aab20fe8b318c0a81.jpg" className="d-block w-100" alt="..." style={{height:'500px'}}/>
+                              </div>
                            </div>
-                        </form>
-   
-   
-   
+                           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span className="visually-hidden">Previous</span>
+                           </button>
+                           <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span className="visually-hidden">Next</span>
+                           </button>
+                        </div>
                      </div>
-   
-   
-   
+
+
+
                   </div>
+
+                  {/* form div */}
+                  <div className="col-md-5 p-md-4 p-2">
+
+                     <div > 
+
+                        <h1 className='text-white '>Create an Account</h1>
+                        <p className='fs-6' style={{color:'black'}}>Already have an account !! <a href="" style={{color:'rgba(70, 34, 136, 1)'}} className='fs-5'>Login</a></p>
+                        <form action="" >
+
+                           <div className='d-flex justify-content-between gap-3'>
+                              <input type="text" placeholder='First Name' className='w-100 p-2 rounded border-0'/>
+                              <input type="text" placeholder='Last NAme' className='w-100 p-2 rounded border-0'/>
+                           </div>
+
+                           <input type="text" placeholder='Enter your Email...' className='w-100 my-3 p-2 rounded border-0'/>
+                           <input type="password" placeholder='Enter your Password...' className='w-100 mb-3 p-2 rounded border-0'  />
+
+                           <div className='d-flex gap-2'>
+                              <input type="checkbox" style={{width:'20px' , height:'20px'}}/>
+                              <p style={{color:'black'}}>I accept the <span style={{color:'rgba(70, 34, 136, 1)' , textDecoration:'underline' , cursor:'pointer'}}> Terms and Condition</span></p>
+                           </div>
+
+                           <button className='btn w-100 rounded-pill text-light' style={{backgroundColor:'rgba(70, 34, 136, 1)'}}>Create Account</button>
+
+
+                        </form>
+
+
+                        <div className='d-flex justify-content-between align-items-center my-md-4'>
+                           <div style={{width:'200px', height:'2px' , backgroundColor:'gray'}}></div>
+                           <p style={{fontSize:'18px' , color:'gray'}}>or Register With</p>
+                           <div style={{width:'200px', height:'2px' , backgroundColor:'gray'}}></div>
+                        </div>
+
+
+                        <div className='d-flex justify-content-between gap-5'>
+                           <button className='rounded-3 border border-secondary p-2 text-white w-100' style={{backgroundColor:'rgb(86, 59, 104) '}}> <img src="https://img.icons8.com/color/512/google-logo.png" alt="" style={{width:'40px' , height:'40px'}}/> Google</button>
+
+                           <button className='rounded-3 border border-secondary p-2 text-white w-100' style={{backgroundColor:'rgb(86, 59, 104)'}}> <img src="https://www.transparentpng.com/download/apple-logo/d9RxbG-apple-logo-free-png.png" alt="" style={{width:'40px' , height:'40px'}}/>Apple</button>
+                        </div>
+
+                        
+                     </div>
+                  </div>
+
+                  <div className="col-md-1"></div>
+
+
                </div>
-      
             </div>
-        
-
-
+         </div>
       </>
    )
 }

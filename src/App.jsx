@@ -10,13 +10,13 @@ function App() {
 
             <div className="container-fluid ">
 
-               <div className='row border border-secondary rounded-4 py-4 mx-md-5 mx-1' >
+               <div className='row border border-secondary rounded-4 py-4 mx-md-5 mx-1 my-4 my-md-0' >
 
                   <div className="col-md-1"></div>
 
                   {/* image */}
 
-                  <div className="col-md-5">
+                  <div className="col-md-5 col-12 mb-3 mb-md-0">
 
                      <div className=''>
                         <div id="carouselExampleIndicators" className="carousel slide ">
@@ -27,13 +27,13 @@ function App() {
                            </div>
                            <div className="carousel-inner rounded-5 shadow-lg">
                               <div className="carousel-item active">
-                                 <img src="https://i.pinimg.com/736x/47/2f/4a/472f4a2bcb69324cf43b71252f374501.jpg" className="d-block w-100" alt="..." style={{height:'500px'}} />
+                                 <img src="https://i.pinimg.com/736x/47/2f/4a/472f4a2bcb69324cf43b71252f374501.jpg" className="d-block w-100 img-fluid " alt="..." style={{objectFit:'cover' , maxHeight:'500px'}} />
                               </div>
                               <div className="carousel-item">
-                                 <img src="https://i.pinimg.com/736x/14/4d/75/144d756d814f189bb5147c37b1d80e4c.jpg" className="d-block w-100" alt="..." style={{height:'500px'}}/>
+                                 <img src="https://i.pinimg.com/736x/14/4d/75/144d756d814f189bb5147c37b1d80e4c.jpg" className="d-block w-100 img-fluid" alt="..." style={{objectFit:'cover' , maxHeight:'500px'}}/>
                               </div>
                               <div className="carousel-item">
-                                 <img src="https://i.pinimg.com/1200x/ea/04/c3/ea04c3a9981c363aab20fe8b318c0a81.jpg" className="d-block w-100" alt="..." style={{height:'500px'}}/>
+                                 <img src="https://i.pinimg.com/1200x/ea/04/c3/ea04c3a9981c363aab20fe8b318c0a81.jpg" className="d-block w-100 img-fluid" alt="..." style={{objectFit:'cover' , maxHeight:'500px'}}/>
                               </div>
                            </div>
                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -52,7 +52,7 @@ function App() {
                   </div>
 
                   {/* form div */}
-                  <div className="col-md-5 p-md-4 p-2">
+                  <div className="col-md-5 col-12 p-md-4 p-2">
 
                      <div > 
 
@@ -60,9 +60,9 @@ function App() {
                         <p className='fs-6' style={{color:'black'}}>Already have an account !! <a href="" style={{color:'rgba(70, 34, 136, 1)'}} className='fs-5'>Login</a></p>
                         <form action="" >
 
-                           <div className='d-flex justify-content-between gap-3'>
-                              <input type="text" placeholder='First Name' className='w-100 p-2 rounded border-0'/>
-                              <input type="text" placeholder='Last NAme' className='w-100 p-2 rounded border-0'/>
+                           <div className='d-md-flex justify-content-between gap-3'>
+                              <input type="text" placeholder='First Name' className='w-100 p-2 rounded border-0 mb-md-0 mb-3' style={{outline:'none'}}/>
+                              <input type="text" placeholder='Last NAme' className='w-100 p-2 rounded border-0' style={{outline:'none'}}/>
                            </div>
 
                            <input type="text" placeholder='Enter your Email...' className='w-100 my-3 p-2 rounded border-0'/>
@@ -80,9 +80,9 @@ function App() {
 
 
                         <div className='d-flex justify-content-between align-items-center my-md-4'>
-                           <div style={{width:'200px', height:'2px' , backgroundColor:'gray'}}></div>
-                           <p style={{fontSize:'18px' , color:'gray'}}>or Register With</p>
-                           <div style={{width:'200px', height:'2px' , backgroundColor:'gray'}}></div>
+                           <div className='flex-grow-1 mx-2' style={{ height:'2px' , backgroundColor:'gray'}}></div>
+                           <p className='text-center m-0' style={{fontSize:'18px' , color:'gray'}}>or Register With</p>
+                           <div className='flex-grow-1 mx-2' style={{ height:'2px' , backgroundColor:'gray'}}></div>
                         </div>
 
 

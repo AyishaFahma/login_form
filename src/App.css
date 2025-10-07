@@ -1,12 +1,23 @@
 #main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient( to top right, rgb(65, 3, 65) , rgb(91, 87, 90));
+}
+
+@media (max-width:768px){
+    /* #main{
+        height: auto;
+        
+    } */
 }
 
 .row{
     background-image: linear-gradient(to bottom right , rgb(126, 121, 121) , rgb(123, 79, 123) , rgb(86, 59, 104));
+    
 }
+
+
+
 
 
 
